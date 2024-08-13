@@ -32,7 +32,7 @@ class App extends Component {
 
   get selectedQuote() {
     if (!this.state.quotes.length || !Number.isInteger(this.state.selectedQuoteIndex)) {
-      return;
+      return null;
     }
     return this.state.quotes[this.state.selectedQuoteIndex];
   }
