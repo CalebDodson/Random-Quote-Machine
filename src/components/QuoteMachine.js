@@ -10,7 +10,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import IconButton from '@mui/material/IconButton';
 
 const QuoteMachine = (props) => (
-    <Card>
+    <Card style={{ color: '#16161a', backgroundColor: "#fffffe" }}>
         <CardContent>
             { props.selectedQuote ? 
             (
@@ -26,12 +26,12 @@ const QuoteMachine = (props) => (
             }
         </CardContent>
         <CardActions>
-            <IconButton id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${props.selectedQuote.quote} -${props.selectedQuote.author}`} target="_blank" rel="noopener noreferrer">
+            <IconButton id="tweet-quote" sx={{ color: '#7f5af0' }} href={`https://twitter.com/intent/tweet?text=${props.selectedQuote.quote} -${props.selectedQuote.author}`} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faTwitter} size="md"></FontAwesomeIcon>
             </IconButton>
             <Grid container justifyContent="flex-end">
                 <Grid item>
-                    <Button sx={{ color: 'black' }} size="small" onClick={props.assignNewQuoteIndex} id="new-quote">New Quote</Button>
+                    <Button sx={{ color: '#7f5af0', fontWeight: "700" }} size="small" onClick={props.assignNewQuoteIndex} id="new-quote">New Quote</Button>
                 </Grid>
             </Grid>
         </CardActions>

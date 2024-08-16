@@ -3,6 +3,7 @@ import '@fontsource/roboto';
 import QuoteMachine from "./components/QuoteMachine";
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
+import "./App.css";
 
 const CenteredGrid = styled(Grid)(({ theme }) => ({
   display: 'flex',
